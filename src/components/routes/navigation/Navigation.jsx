@@ -1,8 +1,9 @@
 import { Outlet, Link } from 'react-router-dom';
+import { Fragment } from 'react';
 import './navigation.scss';
 
 import eyesLogo from '../../../img/E2S reconstructed.png';
-import { Fragment } from 'react';
+
 const Navigation = () => {
   return (
     <Fragment>
@@ -20,6 +21,12 @@ const Navigation = () => {
         <div className='nav-links-container'>
           <Link className='nav-link' to='/shop'>
             SHOP
+          </Link>
+          <Link className='nav-link' to='/shop'>
+            CONTACT
+          </Link>
+          <Link className='nav-link' to='/auth'>
+            LOGIN
           </Link>
         </div>
       </div>
